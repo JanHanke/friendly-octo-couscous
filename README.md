@@ -1,1 +1,1 @@
-# friendly-octo-couscous
+# Computergrafik Labor - Aufgabe 1
