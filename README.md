@@ -1,1 +1,1 @@
-# Computergrafik Labor - Aufgabe 1
+# Computergrafik Labor
