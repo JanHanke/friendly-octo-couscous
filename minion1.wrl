@@ -29,6 +29,9 @@ Group {
 				
 				DEF pants Shape {
 					appearance Appearance {
+						texture ImageTexture {
+							url "jeans.jpeg"
+						}
 						material Material {
 							diffuseColor 0.17 0.44 0.71
 						}
@@ -62,7 +65,114 @@ Group {
 			]
 		}
 
+		# Pants Front
+		Transform {
+			translation 0 -0.5 0.13
+			children [
+				DEF body Shape {
+					appearance Appearance {
+						texture ImageTexture {
+							url "jeans.jpeg"
+						}
+						material Material {
+							diffuseColor 1 1 0
+						}
+					}
+					geometry Cylinder {
+						bottom false
+						top false
+						side true
+						radius 0.9
+						height 0.7
+					}
+				}
+			]
+		}
+
+		# Pants Back
+		Transform {
+			translation 0 -0.5 -0.13
+			children [
+				DEF body Shape {
+					appearance Appearance {
+						texture ImageTexture {
+							url "jeans.jpeg"
+						}
+						material Material {
+							diffuseColor 1 1 0
+						}
+					}
+					geometry Cylinder {
+						bottom false
+						top false
+						side true
+						radius 0.9
+						height 0.7
+					}
+				}
+			]
+		}
+
+		# Pants Strap Left
+		Transform {
+			translation 0.4 -0.3 0
+			rotation 0 0 1 0.78
+			children [
+				DEF StrapLeft Shape {
+					appearance Appearance {
+						texture ImageTexture {
+							url "jeans.jpeg"
+						}
+						material Material {
+							diffuseColor 1 1 0
+						}
+					}
+					geometry Cylinder {
+						bottom false
+						top false
+						side true
+						radius 0.9
+						height 0.15
+					}
+				}
+			]
+		}
+
+		Transform {
+			translation -0.4 -0.3 0
+			rotation 0 0 1 -0.78
+			children [
+				USE StrapLeft
+			]
+		}	
+
 		# Eye
+		Transform {
+			rotation 1 0 0 1.57
+			translation 0 1 1
+			children [
+				
+				DEF eye Shape {
+					appearance Appearance {
+						texture ImageTexture {
+							url "minion-eye.png"
+						}
+						material Material {
+							diffuseColor 0.6 0.6 0.6
+						}
+					}
+					geometry Cylinder {
+						bottom false
+						top true
+						side false
+						radius 0.4
+						height 0.5
+					}
+				}
+			]
+		}
+		
+		# Eye Side
 		Transform {
 			rotation 1 0 0 1.57
 			translation 0 1 1
@@ -76,7 +186,7 @@ Group {
 					}
 					geometry Cylinder {
 						bottom false
-						top true
+						top false
 						side true
 						radius 0.4
 						height 0.5
@@ -84,7 +194,7 @@ Group {
 				}
 			]
 		}
-		
+
 		# Band
 		Transform {
 			translation 0 1 0
@@ -274,6 +384,9 @@ Group {
 						
 						DEF leg Shape {
 							appearance Appearance {
+								texture ImageTexture {
+									url "jeans.jpeg"
+								}
 								material Material {
 									diffuseColor  0.17 0.44 0.71
 								}
