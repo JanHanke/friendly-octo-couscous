@@ -5,6 +5,24 @@ Inline {
     url "./minion1.wrl"
 } 
 
+Transform {
+    translation -5 0 0
+    children [
+        Inline {
+            url "./minion2.wrl"
+        }
+    ]
+}
+
+Transform {
+    translation 5 0 0
+    children [
+        Inline {
+            url "./minion2.wrl"
+        }
+    ]
+}
+
 DEF ground Transform {
 	translation 0 -2.625 0.25
 	children [
