@@ -1,0 +1,40 @@
+#VRML V2.0 utf8
+# Jasmin Obert, Jacqueline Wegert, Jan Hanke
+
+Inline {
+    url "./minion1.wrl"
+} 
+
+DEF ground Transform {
+	translation 0 -2.625 0.25
+	children [
+		
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.75 0.75 0.75
+				}
+			}
+			geometry Box {
+				size 15 0.25 5
+			}
+		}
+	]
+}
+
+DEF background Transform {
+	translation 0 2.25 -2.25
+	children [
+		
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 1 1 1
+				}
+			}
+			geometry Box {
+				size 15 10 0.25
+			}
+		}
+	]
+}
