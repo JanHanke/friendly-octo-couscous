@@ -345,10 +345,10 @@ Group {
 					]
 				}
 
-				# Glove Fingers  Index	
+				# Glove Thumb
 				Transform {
-					translation 2.0 1.3 0
-					rotation 0 0 1 -0.185
+					translation 1.9 1.1 0
+					rotation 0 0 1 0.7
 					children [
 						
 						Shape {
@@ -361,16 +361,16 @@ Group {
 								bottom true
 								top false
 								side true
-								radius 0.08
+								radius 0.1
 								height 0.3
 							}
 						}
 					]
 				}
 
-				# Glove Fingers Middle Tip
+				# Glove Thumb Tip
 				Transform {
-					translation 2.02 1.43 0
+					translation 1.79 1.23 0
 					children [
 						
 						Shape {
@@ -380,48 +380,7 @@ Group {
 								}
 							}
 							geometry Sphere {
-								radius 0.08
-							}
-						}
-					]
-				}
-				
-				# Glove Fingers Middle
-				Transform {
-					translation 2.2 1.2 0
-					rotation 0 0 1 -0.785
-					children [
-						
-						Shape {
-							appearance Appearance {
-								material Material {
-									diffuseColor  0 0 0
-								}
-							}
-							geometry Cylinder {
-								bottom true
-								top false
-								side true
-								radius 0.08
-								height 0.3
-							}
-						}
-					]
-				}
-				
-				# Glove Fingers Middle Tip
-				Transform {
-					translation 2.3 1.3 0
-					children [
-						
-						Shape {
-							appearance Appearance {
-								material Material {
-									diffuseColor  0 0 0
-								}
-							}
-							geometry Sphere {
-								radius 0.08
+								radius 0.1
 							}
 						}
 					]
@@ -514,42 +473,6 @@ Group {
 
 	]
 }
-
-
-DEF ground Transform {
-	translation 0 -2.625 0.25
-	children [
-		
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor 0.75 0.75 0.75
-				}
-			}
-			geometry Box {
-				size 15 0.25 5
-			}
-		}
-	]
-}
-
-DEF background Transform {
-	translation 0 2.25 -2.25
-	children [
-		
-		Shape {
-			appearance Appearance {
-				material Material {
-					diffuseColor 1 1 1
-				}
-			}
-			geometry Box {
-				size 15 10 0.25
-			}
-		}
-	]
-}
-
 
 
 
