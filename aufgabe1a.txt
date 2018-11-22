@@ -1,0 +1,8 @@
+# Klartextlesbare 3D Sprachen
+
+| Modellierungssprache 	| Klartextlesbar 	| Semantisch Reich 	|
+| VRML					| ja				| Ja				|
+| DirectX				| ja				| nein				|
+| OpenGL				| ja				| nein				|
+| Java3D				| ja				| ja				|
+| X3D					| ja				| ja				|

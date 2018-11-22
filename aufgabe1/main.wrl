@@ -18,7 +18,7 @@ Transform {
     translation 5 0 0
     children [
         Inline {
-            url "./minion2.wrl"
+            url "./minion3.wrl"
         }
     ]
 }
