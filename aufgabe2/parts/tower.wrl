@@ -106,10 +106,37 @@ Group {
 			]
 		}
 
+		# S12
+		Transform {
+			translation 0 0 6
+			rotation 0 1 0 1.57 
+			children [
+				USE stripe3meters
+			]
+		}
+
+		# S13
+		Transform {
+			translation 0 0 21
+			rotation 0 1 0 1.57 
+			children [
+				USE stripe3meters
+			]
+		}
+
 		# S14
 		Transform {
 			translation 0 0 18
 			rotation 0 0 0 0
+			children [
+				USE stripe3meters
+			]
+		}
+
+		# S15
+		Transform {
+			translation 3 0 24
+			rotation 0 1 0 1.57 
 			children [
 				USE stripe3meters
 			]
@@ -131,6 +158,14 @@ Group {
 			]
 		}
 
+		# S18
+		Transform {
+			translation 21 0 24
+			rotation 0 1 0 1.57 
+			children [
+				USE stripe3meters
+			]
+		}
 
 	]
 }
