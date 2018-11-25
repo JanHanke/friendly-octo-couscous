@@ -205,5 +205,43 @@ Group {
 			]
 		}
 
+		# S32
+		Transform {
+			children [
+				DEF stripe21meters Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 0 0
+						}
+					}
+					geometry IndexedFaceSet {
+						convex FALSE  # verbindet alle Punkte normal
+						solid FALSE  # malt beide Seiten der Flaeche
+						coord Coordinate {
+							point [
+								3 47.6 0,  # P0
+								24 47.6 0, # P11
+								24 0 0,    # P11 am Boden
+								3 0 0 	   # P0 am Boden
+							]
+						}
+						coordIndex [
+							 0,1,2,3,-1
+						
+						]
+					}
+				}
+			]
+		}
+
+		# S31
+		Transform {
+			translation 24 0 24
+			rotation 0 1 0 1.57
+			children [
+				USE stripe21meters
+			]
+		}
+
 	]
 }
