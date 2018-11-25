@@ -1,0 +1,213 @@
+#VRML V2.0 utf8
+# Jasmin Obert, Jacqueline Wegert, Jan Hanke
+
+DEF all_facade Group {
+    children [
+        DEF facade_front_left Group {
+            children [
+                
+                # Front
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                texture ImageTexture {
+                                    url "../textures/facade_front_left.png"
+                                }
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        0.0     0.0     0.0,    # 0
+                                        29.4    0.0     0.0,    # 1
+                                        29.4   26.0     0.0, 	# 2
+                                        0      26.0     0.0     # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Top
+                Transform {
+                    translation 0 0 -32.4
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        0.0    26.0     0.0,    # 0
+                                        0      26.0    32.4     # 1
+                                        29.4   26.0    32.4, 	# 2
+                                        29.4   26.0     0.0,    # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Back
+                Transform {
+                    translation 0 0 -32.4
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        0.0     0.0     0.0,    # 0
+                                        0      26.0     0.0     # 1
+                                        29.4   26.0     0.0, 	# 2
+                                        29.4    0.0     0.0,    # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+
+        Transform {
+            translation 73.2 0 0
+            children [
+                DEF facade_front_right Group {
+                    children [
+                        # Front
+                        Transform {
+                            translation 0 0 0
+                            children [
+                                Shape {
+                                    appearance Appearance {
+                                        material Material {
+                                            diffuseColor 0.5 0.5 0.5
+                                        }
+
+                                        texture ImageTexture {
+                                            url "../textures/facade_front_right.png"
+                                        }
+                                    }
+
+                                    geometry IndexedFaceSet {
+                                        coord Coordinate {
+                                            point [
+                                                0.0     0.0     0.0,    # 0
+                                                29.4    0.0     0.0,    # 1
+                                                29.4   26.0     0.0,    # 2
+                                                0      26.0     0.0     # 3
+                                            ]
+                                        }
+                                        coordIndex [
+                                            0, 1, 2, 3, -1
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+
+                        # Top
+                        Transform {
+                            translation 0 0 -32.4
+                            children [
+                                Shape {
+                                    appearance Appearance {
+                                        material Material {
+                                            diffuseColor 0.5 0.5 0.5
+                                        }
+                                    }
+
+                                    geometry IndexedFaceSet {
+                                        coord Coordinate {
+                                            point [
+                                                0.0    26.0     0.0,    # 0
+                                                0      26.0    32.4     # 1
+                                                29.4   26.0    32.4, 	# 2
+                                                29.4   26.0     0.0,    # 3
+                                            ]
+                                        }
+                                        coordIndex [
+                                            0, 1, 2, 3, -1
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+
+                        # Back
+                        Transform {
+                            translation 0 0 -32.4
+                            children [
+                                Shape {
+                                    appearance Appearance {
+                                        material Material {
+                                            diffuseColor 0.5 0.5 0.5
+                                        }
+                                    }
+
+                                    geometry IndexedFaceSet {
+                                        coord Coordinate {
+                                            point [
+                                                0.0     0.0     0.0,    # 0
+                                                0      26.0     0.0     # 1
+                                                29.4   26.0     0.0, 	# 2
+                                                29.4    0.0     0.0,    # 3
+                                            ]
+                                        }
+                                        coordIndex [
+                                            0, 1, 2, 3, -1
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+        
+
+        Transform {
+            translation 102.6 0 -93.45
+            rotation 0 1 0 3.141
+            children [
+                USE facade_front_left
+            ]
+        }
+
+        Transform {
+            translation 29.4 0 -93.45
+            rotation 0 1 0 3.1415
+            children [
+                USE facade_front_right
+            ]
+        }
+    ]
+}
+
