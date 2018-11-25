@@ -38,6 +38,44 @@ Group {
 			
 		}
 
+		# top
+		Transform {
+			translation 0 0 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 1 0
+						}
+					}
+					geometry IndexedFaceSet {
+						convex FALSE  # verbindet alle Punkte normal
+						coord Coordinate {
+							point [
+								3 0 0,	# P0
+								3 0 3,  # P1
+								0 0 3,  # P2
+								0 0 18, # P3
+							    3 0 18, # P4
+								3 0 21, # P5
+								6 0 21, # P6
+								6 0 24, # P7
+								21 0 24,
+								21 0 21,
+								24 0 21,
+								24 0 0  # P11 
+							]
+						}
+						coordIndex [
+							 0,11,10,9,8,7,6,5, 4, 3, 2, 1,-1
+						
+						]
+					}
+				}
+			]
+			
+		}
+
 
 	]
 }
