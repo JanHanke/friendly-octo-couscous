@@ -77,7 +77,7 @@ Group {
 			
 		}
 
-		# 3 meters wide stripe
+		# S11
 		Transform {
 			children [
 				DEF stripe3meters Shape {
@@ -106,15 +106,30 @@ Group {
 			]
 		}
 
-		# 
+		# S14
 		Transform {
 			translation 0 0 18
 			rotation 0 0 0 0
 			children [
 				USE stripe3meters
 			]
-		}	
+		}
 
+		# S16
+		Transform {
+			translation 3 0 21
+			children [
+				USE stripe3meters
+			]
+		}
+
+		# S17
+		Transform {
+			translation 18 0 21
+			children [
+				USE stripe3meters
+			]
+		}
 
 
 	]
