@@ -39,7 +39,7 @@ DEF all_facade Group {
 
                 # Top
                 Transform {
-                    translation 0 0 -32.4
+                    translation 0 0 0
                     children [
                         Shape {
                             appearance Appearance {
@@ -51,10 +51,10 @@ DEF all_facade Group {
                             geometry IndexedFaceSet {
                                 coord Coordinate {
                                     point [
-                                        0.0    26.0     0.0,    # 0
-                                        0      26.0    32.4     # 1
-                                        29.4   26.0    32.4, 	# 2
-                                        29.4   26.0     0.0,    # 3
+                                        0.0    26.0   -16.2,    # 0
+                                        29.4   26.0   -16.2,    # 1
+                                        29.4   26.0   -32.4,    # 2
+                                        0.0    26.0   -32.4,    # 3
                                     ]
                                 }
                                 coordIndex [
@@ -81,8 +81,8 @@ DEF all_facade Group {
                                     point [
                                         0.0    26.0     0.0,    # 0
                                         29.4   26.0     0.0,    # 1
-                                        29.4   31.2    -16.2,   # 2
-                                        0      31.2    -16.2,   # 3
+                                        29.4   30.1    -16.2,   # 2
+                                        0      30.1    -16.2,   # 3
                                     ]
                                 }
                                 coordIndex [
@@ -108,9 +108,9 @@ DEF all_facade Group {
                                 coord Coordinate {
                                     point [
                                         0.0    26.0    -16.2,    # 0
-                                        0.0    31.2    -16.2,    # 1
-                                        29.4   31.2    -16.2,    # 2
-                                        29.4   26.0    -16.2,    # 1
+                                        0.0    30.1    -16.2,    # 1
+                                        29.4   30.1    -16.2,    # 2
+                                        29.4   26.0    -16.2,    # 3
                                     ]
                                 }
                                 coordIndex [
@@ -190,7 +190,7 @@ DEF all_facade Group {
 
                         # Top
                         Transform {
-                            translation 0 0 -32.4
+                            translation 0 0 0
                             children [
                                 Shape {
                                     appearance Appearance {
@@ -202,10 +202,10 @@ DEF all_facade Group {
                                     geometry IndexedFaceSet {
                                         coord Coordinate {
                                             point [
-                                                0.0    26.0     0.0,    # 0
-                                                0      26.0    32.4     # 1
-                                                29.4   26.0    32.4, 	# 2
-                                                29.4   26.0     0.0,    # 3
+                                                0.0    26.0   -16.2,    # 0
+                                                29.4   26.0   -16.2,    # 1
+                                                29.4   26.0   -32.4,    # 2
+                                                0.0    26.0   -32.4,    # 3
                                             ]
                                         }
                                         coordIndex [
@@ -232,8 +232,8 @@ DEF all_facade Group {
                                             point [
                                                 0.0    26.0     0.0,    # 0
                                                 29.4   26.0     0.0,    # 1
-                                                29.4   31.2    -16.2,   # 2
-                                                0      31.2    -16.2,   # 3
+                                                29.4   30.1    -16.2,   # 2
+                                                0      30.1    -16.2,   # 3
                                             ]
                                         }
                                         coordIndex [
@@ -259,9 +259,9 @@ DEF all_facade Group {
                                         coord Coordinate {
                                             point [
                                                 0.0    26.0    -16.2,    # 0
-                                                0.0    31.2    -16.2,    # 1
-                                                29.4   31.2    -16.2,    # 2
-                                                29.4   26.0    -16.2,    # 1
+                                                0.0    30.1    -16.2,    # 1
+                                                29.4   30.1    -16.2,    # 2
+                                                29.4   26.0    -16.2,    # 3
                                             ]
                                         }
                                         coordIndex [
