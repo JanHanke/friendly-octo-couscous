@@ -3,40 +3,6 @@
 
 Group {
 	children [
-		# example triangle
-		Transform {
-			translation 0 0.6 0
-			children [
-				Shape {
-					appearance Appearance {
-						material Material {
-							diffuseColor 1 0 0
-						}
-					}
-					geometry IndexedFaceSet {
-						coord Coordinate {
-							point [
-								# bottom 
-								-1.0 -1.0 1.0,	#vertex 0
-								1.0 -1.0 1.0,	#vertex 1
-								1.0 -1.0 -1.0,	#vertex 2
-								-1.0 -1.0 -1.0,	#vertex 3
-								# top
-								0.0 1.0 0.0		#vertex 4
-							]
-						}
-						coordIndex [
-							 0, 3, 2, 1, 0, -1, #bottom square
-							 0, 1, 4, -1, #side1
-							 1, 2, 4, -1, #side2
-							 2, 3, 4, -1, #side3
-							 3, 0, 4, -1  #side4						
-						]
-					}
-				}
-			]
-			
-		}
 
 		# top
 		Transform {
