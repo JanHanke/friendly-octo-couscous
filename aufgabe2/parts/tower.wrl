@@ -80,7 +80,7 @@ Group {
 		# 3 meters wide stripe
 		Transform {
 			children [
-				DEF Stripe Shape {
+				DEF stripe3meters Shape {
 					appearance Appearance {
 						material Material {
 							diffuseColor 0 0 1
@@ -111,7 +111,7 @@ Group {
 			translation 0 0 18
 			rotation 0 0 0 0
 			children [
-				USE Stripe
+				USE stripe3meters
 			]
 		}	
 
