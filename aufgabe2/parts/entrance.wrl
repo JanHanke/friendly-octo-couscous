@@ -1,0 +1,133 @@
+#VRML V2.0 utf8
+# Jasmin Obert, Jacqueline Wegert, Jan Hanke
+
+DEF entrance Group {
+    children [
+        DEF entrance_front Group {
+            children [
+                
+                # Front
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                #texture ImageTexture {
+                                #    url "../textures/facade_front_left.png"
+                                #}
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        0.0     0.0     0.0,    # 0
+                                        43.8    0.0     0.0,    # 1
+                                        43.8   35.7     0.0, 	# 2
+                                        0.0    35.7     0.0     # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Front Left
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                #texture ImageTexture {
+                                #    url "../textures/facade_front_left.png"
+                                #}
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        0.0     0.0     0.0,    # 0
+                                        0.0    35.7     0.0     # 1
+                                        0.0    35.7    -3.0, 	# 2
+                                        0.0     0.0    -3.0,    # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Front Right
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                #texture ImageTexture {
+                                #    url "../textures/facade_front_left.png"
+                                #}
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        43.8     0.0     0.0,   # 0
+                                        43.8     0.0    -3.0,   # 1
+                                        43.8    35.7    -3.0,   # 2
+                                        43.8    35.7     0.0,   # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Top
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        0.0    35.7     0.0,   # 0
+                                        43.8   35.7     0.0,   # 1
+                                        43.8   35.7   -35.4,   # 2
+                                        0.0    35.7   -35.4,   # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+

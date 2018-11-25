@@ -12,6 +12,16 @@ Transform {
     ]
 }
 
+Transform {
+    translation 53.4 0 -0.9
+    rotation 0 0 0 0
+    children [
+        Inline {
+            url "./parts/entrance.wrl"
+        }
+    ]
+}
+
 # Ground
 Shape {
     appearance Appearance {
