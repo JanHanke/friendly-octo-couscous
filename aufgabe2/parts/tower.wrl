@@ -50,24 +50,25 @@ Group {
 					}
 					geometry IndexedFaceSet {
 						convex FALSE  # verbindet alle Punkte normal
+						solid FALSE  # malt beide Seiten der Flaeche
 						coord Coordinate {
 							point [
-								3 0 0,	# P0
-								3 0 3,  # P1
-								0 0 3,  # P2
-								0 0 18, # P3
-							    3 0 18, # P4
-								3 0 21, # P5
-								6 0 21, # P6
-								6 0 24, # P7
-								21 0 24,
-								21 0 21,
-								24 0 21,
-								24 0 0  # P11 
+								3 47.6 0,	# P0
+								3 47.6 3,  # P1
+								0 47.6 3,  # P2
+								0 47.6 18, # P3
+							    3 47.6 18, # P4
+								3 47.6 21, # P5
+								6 47.6 21, # P6
+								6 47.6 24, # P7
+								21 47.6 24,
+								21 47.6 21,
+								24 47.6 21,
+								24 47.6 0  # P11 
 							]
 						}
 						coordIndex [
-							 0,11,10,9,8,7,6,5, 4, 3, 2, 1,-1
+							 0,1,2,3,4,5,6,7,8,9,10,11,-1
 						
 						]
 					}
@@ -75,6 +76,45 @@ Group {
 			]
 			
 		}
+
+		# 3 meters wide stripe
+		Transform {
+			children [
+				DEF Stripe Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 1
+						}
+					}
+					geometry IndexedFaceSet {
+						convex FALSE  # verbindet alle Punkte normal
+						solid FALSE  # malt beide Seiten der Flaeche
+						coord Coordinate {
+							point [
+								3 47.6 0,  # P0
+								3 47.6 3,  # P1
+								3 0 3,     # P1 am Boden
+								3 0 0 	   # P0 am Boden
+							]
+						}
+						coordIndex [
+							 0,1,2,3,-1
+						
+						]
+					}
+				}
+			]
+		}
+
+		# 
+		Transform {
+			translation 0 0 18
+			rotation 0 0 0 0
+			children [
+				USE Stripe
+			]
+		}	
+
 
 
 	]
