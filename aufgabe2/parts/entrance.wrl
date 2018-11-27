@@ -15,9 +15,9 @@ DEF entrance Group {
                                 material Material {
                                     diffuseColor 0.5 0.5 0.5
                                 }
-                                #texture ImageTexture {
-                                #    url "../textures/facade_front_left.png"
-                                #}
+                                texture ImageTexture {
+                                    url "../textures/FrontTextur/Mitte.png"
+                                }
                             }
 
                             geometry IndexedFaceSet {
@@ -68,6 +68,37 @@ DEF entrance Group {
                     ]
                 }
 
+                # Front Top Left
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                #texture ImageTexture {
+                                #    url "../textures/facade_front_left.png"
+                                #}
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        0.0    26.0     0.0,    # 0
+                                        0.0    35.7     0.0     # 1
+                                        0.0    35.7    -24.3, 	# 2
+                                        0.0    26.0    -24.3,    # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
                 # Front Right
                 Transform {
                     translation 0 0 0
@@ -99,6 +130,37 @@ DEF entrance Group {
                     ]
                 }
 
+                # Front Top Right
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                #texture ImageTexture {
+                                #    url "../textures/facade_front_left.png"
+                                #}
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        43.8    26.0     0.0,    # 0
+                                        43.8    26.0    -24.3,    # 1
+                                        43.8    35.7    -24.3, 	# 2
+                                        43.8    35.7     0.0     # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
                 # Top
                 Transform {
                     translation 0 0 0
@@ -115,8 +177,70 @@ DEF entrance Group {
                                     point [
                                         0.0    35.7     0.0,   # 0
                                         43.8   35.7     0.0,   # 1
-                                        43.8   35.7   -35.4,   # 2
-                                        0.0    35.7   -35.4,   # 3
+                                        43.8   35.7   -24.3,   # 2
+                                        0.0    35.7   -24.3,   # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Front Top Back Wall
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                #texture ImageTexture {
+                                #    url "../textures/facade_front_left.png"
+                                #}
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                         0.0    26.0    -24.3,    # 0
+                                         0.0    35.7    -24.3,    # 3
+                                        43.8    35.7    -24.3,    # 2
+                                        43.8    26.0    -24.3,    # 1
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Front Top Back
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                #texture ImageTexture {
+                                #    url "../textures/facade_front_left.png"
+                                #}
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                         0.0    26.0    -24.3,    # 0
+                                        43.8    26.0    -24.3,    # 1
+                                        43.8    26.0    -35.4,    # 2
+                                         0.0    26.0    -35.4,    # 3
                                     ]
                                 }
                                 coordIndex [
