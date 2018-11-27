@@ -2,6 +2,7 @@
 # Jasmin Obert, Jacqueline Wegert, Jan Hanke
 
 
+# Facade Front and Back
 Transform {
     translation 24 0 -3.9
     rotation 0 0 0 0
@@ -23,6 +24,7 @@ Transform {
     ]
 }
 
+# Center
 Transform {
     translation 46.8 0 -36.3
     rotation 0 0 0 0
@@ -33,9 +35,32 @@ Transform {
     ]
 }
 
+# Facade Left
+Transform {
+    translation 4.2 0 -78.6
+    rotation 0 1 0 -1.57075
+    children [
+        Inline {
+            url "./parts/facade_left_and_right.wrl"
+        }
+    ]
+}
+
+# Facade Right
+Transform {
+    translation 146.4 0 -24
+    rotation 0 1 0 1.57075
+    children [
+        Inline {
+            url "./parts/facade_left_and_right.wrl"
+        }
+    ]
+}
+
+# Towers ###########################################
 # Tower Front Left
 Transform {
-    translation 0 0 -24.9
+    translation 0 0 -24.0
     rotation 0 0 0 0
     children [
         Inline {
@@ -46,7 +71,7 @@ Transform {
 
 # Tower Back Left
 Transform {
-    translation 24 0 -100.5
+    translation 24 0 -102.45
     rotation 0 1 0 -1.57075
     children [
         Inline {
@@ -57,7 +82,7 @@ Transform {
 
 # Tower Back Right
 Transform {
-    translation 150.6 0 -76.5
+    translation 150.6 0 -78.45
     rotation 0 1 0 3.1415
     children [
         Inline {
@@ -68,7 +93,7 @@ Transform {
 
 # Tower Front Right
 Transform {
-    translation 126.6 0 -0.9
+    translation 126.6 0 0
     rotation 0 1 0 1.57075
     children [
         Inline {
