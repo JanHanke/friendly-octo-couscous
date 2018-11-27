@@ -16,10 +16,10 @@ DEF slice Group {
                     geometry IndexedFaceSet {
                         coord Coordinate {
                             point [
-                                20    0  0,   # 0
-                                15   10  0,
-                                12.5 10 7.5,
-                                17.5  0 10,
+                                20     0  0,   # 0 A
+                                17.3  10  0,   # 3 I
+                                16.0  10  6.6, # 2 C
+                                18.5   0  7.7, # 1 B
                             ]
                         }
                         coordIndex [
@@ -38,10 +38,10 @@ DEF slice Group {
                     geometry IndexedFaceSet {
                         coord Coordinate {
                             point [
-                                12.5 10 7.5,
-                                15 10  0,
-                                10 18  0,
-                                7.5 18 5,
+                                17.3  10    0,   # 0 I
+                                12.9  15.3  0,   # 3 H
+                                11.9  15.3  4.9, # 2 D
+                                16.0  10    6.6, # 1 C
                             ]
                         }
                         coordIndex [
@@ -60,9 +60,31 @@ DEF slice Group {
                     geometry IndexedFaceSet {
                         coord Coordinate {
                             point [
-                                7.5 18 5,
-                                10 18  0,
-                                0 24.3 0
+                                12.9  15.3  0,   # 0 H
+                                 4.8  19.4  0,   # 3 G
+                                 4.5  19.4  1.9, # 2 E
+                                11.9  15.3  4.9, # 1 D
+                            ]
+                        }
+                        coordIndex [
+                            0, 1, 2, 3, -1
+                        ]
+                    }
+                }
+
+                Shape {
+                    appearance Appearance {
+                        material Material {
+                            diffuseColor 0.5 0.5 0.5
+                        }
+                    }
+
+                    geometry IndexedFaceSet {
+                        coord Coordinate {
+                            point [
+                                 4.8  19.4  0,   # 0 G
+                                 0    24.3  0,   # 2 F
+                                 4.5  19.4  1.9, # 1 E
                             ]
                         }
                         coordIndex [
@@ -75,54 +97,30 @@ DEF slice Group {
     ]
 }
 
-DEF three Group {
-    children [
-        Transform {
-            translation 0 0 0
-            rotation 0 1 0 0.5
-            children [
-                USE slice
-            ]
-        }
-
-        Transform {
-            translation 0 0 0
-            rotation 0 1 0 1
-            children [
-                USE slice
-            ]
-        }
-
-        Transform {
-            translation 0 0 0
-            rotation 0 1 0 1.5
-            children [
-                USE slice
-            ]
-        }
-    ]
-}
-
-Transform {
-    translation 0 0 0
-    rotation 0 1 0 1.5
-    children [
-        USE three
-    ]
-}
-
-Transform {
-    translation 0 0 0
-    rotation 0 1 0 3
-    children [
-        USE three
-    ]
-}
-
-Transform {
-    translation 0 0 0
-    rotation 0 1 0 4.5
-    children [
-        USE three
-    ]
-}
+#DEF three Group {
+#    children [
+#        Transform {
+#            translation 0 0 -5
+#            rotation 0 1 0 0.5
+#            children [
+#                USE slice
+#            ]
+#        }
+#
+#        Transform {
+#            translation 0 0 0
+#            rotation 0 1 0 1
+#            children [
+#                USE slice
+#            ]
+#        }
+#
+#        Transform {
+#            translation 0 0 0
+#            rotation 0 1 0 1.5
+#            children [
+#                USE slice
+#            ]
+#        }
+#    ]
+#}
