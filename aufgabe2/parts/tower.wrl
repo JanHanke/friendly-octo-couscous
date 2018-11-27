@@ -13,6 +13,13 @@ Group {
 						material Material {
 							diffuseColor 0 1 0
 						}
+
+						texture ImageTexture {
+							url "../textures/tower/top.png"
+						}
+						textureTransform TextureTransform {
+							scale 1 1
+						}
 					}
 					geometry IndexedFaceSet {
 						convex FALSE  # verbindet alle Punkte normal
@@ -50,6 +57,12 @@ Group {
 					appearance Appearance {
 						material Material {
 							diffuseColor 0 0 1
+						}
+						texture ImageTexture {
+							url "../textures/tower/stripe.png"
+						}
+						textureTransform TextureTransform {
+							scale 1 1
 						}
 					}
 					geometry IndexedFaceSet {
@@ -141,6 +154,15 @@ Group {
 						material Material {
 							diffuseColor 1 1 0
 						}
+						texture ImageTexture {
+							url "../textures/tower/side.png"
+						}
+						textureTransform TextureTransform {
+							rotation 1.5705
+							scale 3 1
+						}
+
+
 					}
 					geometry IndexedFaceSet {
 						convex FALSE  # verbindet alle Punkte normal
@@ -179,6 +201,14 @@ Group {
 						material Material {
 							diffuseColor 1 0 0
 						}
+						texture ImageTexture {
+							url "../textures/tower/side-short.png"
+						}
+						textureTransform TextureTransform {
+							rotation 1.5705
+							scale 2 1
+						}
+
 					}
 					geometry IndexedFaceSet {
 						convex FALSE  # verbindet alle Punkte normal

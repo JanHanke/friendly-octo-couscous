@@ -46,9 +46,13 @@ DEF entrance Group {
                                 material Material {
                                     diffuseColor 0.5 0.5 0.5
                                 }
-                                #texture ImageTexture {
-                                #    url "../textures/facade_front_left.png"
-                                #}
+                                texture ImageTexture {
+                                    url "../textures/front/top.png"
+                                }
+                                textureTransform TextureTransform {
+                                    rotation 1.5705
+                                    scale 1 1
+                                }
                             }
 
                             geometry IndexedFaceSet {
@@ -77,9 +81,13 @@ DEF entrance Group {
                                 material Material {
                                     diffuseColor 0.5 0.5 0.5
                                 }
-                                #texture ImageTexture {
-                                #    url "../textures/facade_front_left.png"
-                                #}
+                                texture ImageTexture {
+                                    url "../textures/front/top.png"
+                                }
+                                textureTransform TextureTransform {
+                                    rotation 1.5705
+                                    scale 1 1
+                                }
                             }
 
                             geometry IndexedFaceSet {
@@ -143,9 +151,13 @@ DEF entrance Group {
                                 material Material {
                                     diffuseColor 0.5 0.5 0.5
                                 }
-                                #texture ImageTexture {
-                                #    url "../textures/facade_front_left.png"
-                                #}
+                                texture ImageTexture {
+                                    url "../textures/front/top.png"
+                                }
+                                textureTransform TextureTransform {
+                                    rotation 1.5705
+                                    scale 1 1
+                                }
                             }
 
                             geometry IndexedFaceSet {
