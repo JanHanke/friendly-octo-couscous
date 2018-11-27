@@ -43,6 +43,9 @@ DEF entrance Group {
                                 material Material {
                                     diffuseColor 0.7 0.7 0.7
                                 }
+                                texture ImageTexture {
+                                    url "../textures/front/left.png"
+                                }
                             }
 
                             geometry IndexedFaceSet {
@@ -70,6 +73,9 @@ DEF entrance Group {
                             appearance Appearance {
                                 material Material {
                                     diffuseColor 0.7 0.7 0.7
+                                }
+                                texture ImageTexture {
+                                    url "../textures/front/left.png"
                                 }
                             }
 

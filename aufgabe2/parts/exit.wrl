@@ -16,7 +16,7 @@ DEF entrance Group {
                                     diffuseColor 0.5 0.5 0.5
                                 }
                                 texture ImageTexture {
-                                    url "../textures/FrontTextur/Mitte.png"
+                                    url "../textures/back/center.png"
                                 }
                             }
 
@@ -262,9 +262,14 @@ DEF entrance Group {
                                         material Material {
                                             diffuseColor 0.8 0.8 0.8
                                         }
-                                        #texture ImageTexture {
-                                        #    url "../textures/FrontTextur/Mitte.png"
-                                        #}
+                                        texture ImageTexture {
+                                            url "../textures/back/center.png"
+                                        }
+                                        textureTransform TextureTransform {
+                                            rotation 1.5705
+                                            translation 0 0
+                                            scale 1.15 1
+                                        }
                                     }
 
                                     geometry IndexedFaceSet {
@@ -293,9 +298,14 @@ DEF entrance Group {
                                         material Material {
                                             diffuseColor 0.8 0.8 0.8
                                         }
-                                        #texture ImageTexture {
-                                        #    url "../textures/FrontTextur/Mitte.png"
-                                        #}
+                                        texture ImageTexture {
+                                            url "../textures/back/front-side.png"
+                                        }
+                                        textureTransform TextureTransform {
+                                            rotation 1.5705
+                                            translation 0 0
+                                            scale 5 1
+                                        }
                                     }
 
                                     geometry IndexedFaceSet {
@@ -324,9 +334,14 @@ DEF entrance Group {
                                         material Material {
                                             diffuseColor 0.8 0.8 0.8
                                         }
-                                        #texture ImageTexture {
-                                        #    url "../textures/FrontTextur/Mitte.png"
-                                        #}
+                                        texture ImageTexture {
+                                            url "../textures/back/front-side.png"
+                                        }
+                                        textureTransform TextureTransform {
+                                            rotation 1.5705
+                                            translation 0 0
+                                            scale 5 1
+                                        }
                                     }
 
                                     geometry IndexedFaceSet {

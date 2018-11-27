@@ -16,7 +16,7 @@ DEF entrance Group {
                                     diffuseColor 0.5 0.5 0.5
                                 }
                                 texture ImageTexture {
-                                    url "../textures/FrontTextur/Mitte.png"
+                                    url "../textures/front/center.png"
                                 }
                             }
 
@@ -107,6 +107,13 @@ DEF entrance Group {
                             appearance Appearance {
                                 material Material {
                                     diffuseColor 0.5 0.5 0.5
+                                }
+                                texture ImageTexture {
+                                    url "../textures/front/top.png"
+                                }
+                                textureTransform TextureTransform {
+                                    rotation 1.5705
+                                    scale 2 1
                                 }
                             }
 
@@ -202,7 +209,7 @@ DEF entrance Group {
                                             diffuseColor 0.5 0.5 0.5
                                         }
                                         texture ImageTexture {
-                                            url "../textures/FrontTextur/mitte-vorbau.png"
+                                            url "../textures/front/center-front.png"
                                         }
                                     }
 
@@ -233,9 +240,12 @@ DEF entrance Group {
                                         material Material {
                                             diffuseColor 0.5 0.5 0.5
                                         }
-                                        #texture ImageTexture {
-                                        #    url "../textures/facade_front_left.png"
-                                        #}
+                                        texture ImageTexture {
+                                            url "../textures/front/front-side.png"
+                                        }
+                                        textureTransform TextureTransform {
+                                        	rotation 1.5705
+                                        }
                                     }
 
                                     geometry IndexedFaceSet {
@@ -264,9 +274,12 @@ DEF entrance Group {
                                         material Material {
                                             diffuseColor 0.5 0.5 0.5
                                         }
-                                        #texture ImageTexture {
-                                        #    url "../textures/facade_front_left.png"
-                                        #}
+                                        texture ImageTexture {
+                                            url "../textures/front/front-side.png"
+                                        }
+                                        textureTransform TextureTransform {
+                                            rotation 1.5705
+                                        }
                                     }
 
                                     geometry IndexedFaceSet {
@@ -296,7 +309,7 @@ DEF entrance Group {
                                             diffuseColor 0.5 0.5 0.5
                                         }
                                         texture ImageTexture {
-                                            url "../textures/FrontTextur/front-roof.png"
+                                            url "../textures/front/front-roof.png"
                                         }
                                     }
 
@@ -327,7 +340,7 @@ DEF entrance Group {
                                             diffuseColor 0.5 0.5 0.5
                                         }
                                         texture ImageTexture {
-                                            url "../textures/FrontTextur/front-roof.png"
+                                            url "../textures/front/front-roof.png"
                                         }
                                     }
 
