@@ -61,8 +61,8 @@ DEF slice Group {
                         coord Coordinate {
                             point [
                                 12.9  15.3  0,   # 0 H
-                                 4.8  19.4  0,   # 3 G
-                                 4.5  19.4  1.9, # 2 E
+                                 4.8  22.4  0,   # 3 G
+                                 4.5  22.4  1.9, # 2 E
                                 11.9  15.3  4.9, # 1 D
                             ]
                         }
@@ -82,9 +82,9 @@ DEF slice Group {
                     geometry IndexedFaceSet {
                         coord Coordinate {
                             point [
-                                 4.8  19.4  0,   # 0 G
+                                 4.8  22.4  0,   # 0 G
                                  0    24.3  0,   # 2 F
-                                 4.5  19.4  1.9, # 1 E
+                                 4.5  22.4  1.9, # 1 E
                             ]
                         }
                         coordIndex [
@@ -97,30 +97,65 @@ DEF slice Group {
     ]
 }
 
-#DEF three Group {
-#    children [
-#        Transform {
-#            translation 0 0 -5
-#            rotation 0 1 0 0.5
-#            children [
-#                USE slice
-#            ]
-#        }
-#
-#        Transform {
-#            translation 0 0 0
-#            rotation 0 1 0 1
-#            children [
-#                USE slice
-#            ]
-#        }
-#
-#        Transform {
-#            translation 0 0 0
-#            rotation 0 1 0 1.5
-#            children [
-#                USE slice
-#            ]
-#        }
-#    ]
-#}
+DEF quarter Group {
+    children [
+        Transform {
+            translation 0 0 0
+            rotation 0 1 0 0.38
+            children [
+                USE slice
+            ]
+        }
+
+        Transform {
+            translation 0 0 0
+            rotation 0 1 0 0.75
+            children [
+                USE slice
+            ]
+        }
+
+        Transform {
+            translation 0 0 0
+            rotation 0 1 0 1.1
+            children [
+                USE slice
+            ]
+        }
+    ]
+}
+
+Transform {
+    rotation 0 1 0 1.1
+    children [
+        USE quarter
+    ]
+}
+
+Transform {
+    rotation 0 1 0 2.2
+    children [
+        USE quarter
+    ]
+}
+
+Transform {
+    rotation 0 1 0 3.3
+    children [
+        USE quarter
+    ]
+}
+
+Transform {
+    rotation 0 1 0 4.4
+    children [
+        USE quarter
+    ]
+}
+
+Transform {
+    rotation 0 1 0 5.89
+    children [
+        USE slice
+    ]
+}
