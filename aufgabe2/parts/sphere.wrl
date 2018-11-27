@@ -1,0 +1,128 @@
+#VRML V2.0 utf8
+# Jasmin Obert, Jacqueline Wegert, Jan Hanke
+
+DEF slice Group {
+    children [
+        Transform {
+            translation 0 0 0
+            children [
+                Shape {
+                    appearance Appearance {
+                        material Material {
+                            diffuseColor 0.5 0.5 0.5
+                        }
+                    }
+
+                    geometry IndexedFaceSet {
+                        coord Coordinate {
+                            point [
+                                20    0  0,   # 0
+                                15   10  0,
+                                12.5 10 7.5,
+                                17.5  0 10,
+                            ]
+                        }
+                        coordIndex [
+                            0, 1, 2, 3, -1
+                        ]
+                    }
+                }
+
+                Shape {
+                    appearance Appearance {
+                        material Material {
+                            diffuseColor 0.5 0.5 0.5
+                        }
+                    }
+
+                    geometry IndexedFaceSet {
+                        coord Coordinate {
+                            point [
+                                12.5 10 7.5,
+                                15 10  0,
+                                10 18  0,
+                                7.5 18 5,
+                            ]
+                        }
+                        coordIndex [
+                            0, 1, 2, 3, -1
+                        ]
+                    }
+                }
+
+                Shape {
+                    appearance Appearance {
+                        material Material {
+                            diffuseColor 0.5 0.5 0.5
+                        }
+                    }
+
+                    geometry IndexedFaceSet {
+                        coord Coordinate {
+                            point [
+                                7.5 18 5,
+                                10 18  0,
+                                0 24.3 0
+                            ]
+                        }
+                        coordIndex [
+                            0, 1, 2, -1
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+DEF three Group {
+    children [
+        Transform {
+            translation 0 0 0
+            rotation 0 1 0 0.5
+            children [
+                USE slice
+            ]
+        }
+
+        Transform {
+            translation 0 0 0
+            rotation 0 1 0 1
+            children [
+                USE slice
+            ]
+        }
+
+        Transform {
+            translation 0 0 0
+            rotation 0 1 0 1.5
+            children [
+                USE slice
+            ]
+        }
+    ]
+}
+
+Transform {
+    translation 0 0 0
+    rotation 0 1 0 1.5
+    children [
+        USE three
+    ]
+}
+
+Transform {
+    translation 0 0 0
+    rotation 0 1 0 3
+    children [
+        USE three
+    ]
+}
+
+Transform {
+    translation 0 0 0
+    rotation 0 1 0 4.5
+    children [
+        USE three
+    ]
+}
