@@ -11,6 +11,13 @@ DEF slice Group {
                         material Material {
                             diffuseColor 0.5 0.5 0.5
                         }
+                        texture ImageTexture {
+                            url "../textures/dome/window.png"
+                        }
+                        textureTransform TextureTransform {
+                            scale 5 2
+                        }
+
                     }
 
                     geometry IndexedFaceSet {
@@ -33,14 +40,20 @@ DEF slice Group {
                         material Material {
                             diffuseColor 0.5 0.5 0.5
                         }
+                        texture ImageTexture {
+                            url "../textures/dome/window.png"
+                        }
+                        textureTransform TextureTransform {
+                            scale 5 2
+                        }
                     }
 
                     geometry IndexedFaceSet {
                         coord Coordinate {
                             point [
                                 17.3  10    0,   # 0 I
-                                12.9  15.3  0,   # 3 H
-                                11.9  15.3  4.9, # 2 D
+                                12.9  17.3  0,   # 3 H
+                                11.9  17.3  4.9, # 2 D
                                 16.0  10    6.6, # 1 C
                             ]
                         }
@@ -55,15 +68,21 @@ DEF slice Group {
                         material Material {
                             diffuseColor 0.5 0.5 0.5
                         }
+                        texture ImageTexture {
+                            url "../textures/dome/window.png"
+                        }
+                        textureTransform TextureTransform {
+                            scale 5 2
+                        }
                     }
 
                     geometry IndexedFaceSet {
                         coord Coordinate {
                             point [
-                                12.9  15.3  0,   # 0 H
+                                12.9  17.3  0,   # 0 H
                                  4.8  22.4  0,   # 3 G
                                  4.5  22.4  1.9, # 2 E
-                                11.9  15.3  4.9, # 1 D
+                                11.9  17.3  4.9, # 1 D
                             ]
                         }
                         coordIndex [
@@ -76,6 +95,12 @@ DEF slice Group {
                     appearance Appearance {
                         material Material {
                             diffuseColor 0.5 0.5 0.5
+                        }
+                        texture ImageTexture {
+                            url "../textures/dome/window.png"
+                        }
+                        textureTransform TextureTransform {
+                            scale 5 2
                         }
                     }
 
