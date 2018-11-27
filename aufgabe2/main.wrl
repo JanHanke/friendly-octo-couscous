@@ -1,126 +1,142 @@
 #VRML V2.0 utf8
 # Jasmin Obert, Jacqueline Wegert, Jan Hanke
 
-
-# Facade Front and Back
 Transform {
-    translation 24 0 -3.9
-    rotation 0 0 0 0
+    translation -75.3 0 51.3
     children [
-        Inline {
-            url "./parts/facade_front_and_back.wrl"
+        # Facade Front and Back
+        Transform {
+            translation 24 0 -3.9
+            rotation 0 0 0 0
+            children [
+                Inline {
+                    url "./parts/facade_front_and_back.wrl"
+                }
+            ]
+        }
+
+        # Entrance
+        Transform {
+            translation 53.4 0 -0.9
+            rotation 0 0 0 0
+            children [
+                Inline {
+                    url "./parts/entrance.wrl"
+                }
+            ]
+        }
+
+        # Exit
+        Transform {
+            translation 97.2 0 -98.85
+            rotation 0 1 0 3.1415
+            children [
+                Inline {
+                    url "./parts/exit.wrl"
+                }
+            ]
+        }
+
+        # Center
+        Transform {
+            translation 46.8 0 -36.3
+            rotation 0 0 0 0
+            children [
+                Inline {
+                    url "./parts/center_building.wrl"
+                }
+            ]
+        }
+
+        # Facade Left
+        Transform {
+            translation 4.2 0 -78.6
+            rotation 0 1 0 -1.57075
+            children [
+                Inline {
+                    url "./parts/facade_left_and_right.wrl"
+                }
+            ]
+        }
+
+        # Facade Right
+        Transform {
+            translation 146.4 0 -24
+            rotation 0 1 0 1.57075
+            children [
+                Inline {
+                    url "./parts/facade_left_and_right.wrl"
+                }
+            ]
+        }
+
+        # Towers ###########################################
+        # Tower Front Left
+        Transform {
+            translation 0 0 -24.0
+            rotation 0 0 0 0
+            children [
+                Inline {
+                    url "./parts/tower.wrl"
+                }
+            ]
+        }
+
+        # Tower Back Left
+        Transform {
+            translation 24 0 -102.45
+            rotation 0 1 0 -1.57075
+            children [
+                Inline {
+                    url "./parts/tower.wrl"
+                }
+            ]
+        }
+
+        # Tower Back Right
+        Transform {
+            translation 150.6 0 -78.45
+            rotation 0 1 0 3.1415
+            children [
+                Inline {
+                    url "./parts/tower.wrl"
+                }
+            ]
+        }
+
+        # Tower Front Right
+        Transform {
+            translation 126.6 0 0
+            rotation 0 1 0 1.57075
+            children [
+                Inline {
+                    url "./parts/tower.wrl"
+                }
+            ]
+        }
+
+        # Ground
+        Shape {
+            appearance Appearance {
+                material Material {
+                    diffuseColor 0.5 0.5 0.5
+                }
+            }
+
+            geometry IndexedFaceSet {
+                coord Coordinate {
+                    point [
+                        0.0     0.0     0.0,    # 0
+                        150.6   0.0     0.0,    # 1
+                        150.6   0.0  -102.6,    # 2
+                        0.0     0.0  -102.6,    # 3
+                    ]
+                }
+                coordIndex [
+                    0, 1, 2, 3, -1
+                ]
+            }
         }
     ]
 }
 
-# Entrance
-Transform {
-    translation 53.4 0 -0.9
-    rotation 0 0 0 0
-    children [
-        Inline {
-            url "./parts/entrance.wrl"
-        }
-    ]
-}
-
-# Center
-Transform {
-    translation 46.8 0 -36.3
-    rotation 0 0 0 0
-    children [
-        Inline {
-            url "./parts/center_building.wrl"
-        }
-    ]
-}
-
-# Facade Left
-Transform {
-    translation 4.2 0 -78.6
-    rotation 0 1 0 -1.57075
-    children [
-        Inline {
-            url "./parts/facade_left_and_right.wrl"
-        }
-    ]
-}
-
-# Facade Right
-Transform {
-    translation 146.4 0 -24
-    rotation 0 1 0 1.57075
-    children [
-        Inline {
-            url "./parts/facade_left_and_right.wrl"
-        }
-    ]
-}
-
-# Towers ###########################################
-# Tower Front Left
-Transform {
-    translation 0 0 -24.0
-    rotation 0 0 0 0
-    children [
-        Inline {
-            url "./parts/tower.wrl"
-        }
-    ]
-}
-
-# Tower Back Left
-Transform {
-    translation 24 0 -102.45
-    rotation 0 1 0 -1.57075
-    children [
-        Inline {
-            url "./parts/tower.wrl"
-        }
-    ]
-}
-
-# Tower Back Right
-Transform {
-    translation 150.6 0 -78.45
-    rotation 0 1 0 3.1415
-    children [
-        Inline {
-            url "./parts/tower.wrl"
-        }
-    ]
-}
-
-# Tower Front Right
-Transform {
-    translation 126.6 0 0
-    rotation 0 1 0 1.57075
-    children [
-        Inline {
-            url "./parts/tower.wrl"
-        }
-    ]
-}
-
-# Ground
-Shape {
-    appearance Appearance {
-        material Material {
-            diffuseColor 0.5 0.5 0.5
-        }
-    }
-
-    geometry IndexedFaceSet {
-    coord Coordinate {
-        point [
-            0.0     0.0     0.0,    # 0
-            150.6   0.0     0.0,    # 1
-            150.6   0.0  -102.6,    # 2
-            0.0     0.0  -102.6,    # 3
-        ]
-    }
-    coordIndex [
-        0, 1, 2, 3, -1
-    ]
-}
-}
