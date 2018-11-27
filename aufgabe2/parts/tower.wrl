@@ -1,0 +1,213 @@
+#VRML V2.0 utf8
+# Jasmin Obert, Jacqueline Wegert, Jan Hanke
+
+Group {
+	children [
+
+		# top
+		Transform {
+			translation 0 0 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 1 0
+						}
+					}
+					geometry IndexedFaceSet {
+						convex FALSE  # verbindet alle Punkte normal
+						solid FALSE  # malt beide Seiten der Flaeche
+						coord Coordinate {
+							point [
+								3 47.6 0,	# P0
+								3 47.6 3,  # P1
+								0 47.6 3,  # P2
+								0 47.6 18, # P3
+							    3 47.6 18, # P4
+								3 47.6 21, # P5
+								6 47.6 21, # P6
+								6 47.6 24, # P7
+								21 47.6 24,
+								21 47.6 21,
+								24 47.6 21,
+								24 47.6 0  # P11 
+							]
+						}
+						coordIndex [
+							 0,1,2,3,4,5,6,7,8,9,10,11,-1
+						
+						]
+					}
+				}
+			]
+			
+		}
+
+		# S11
+		Transform {
+			children [
+				DEF stripe3meters Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 1
+						}
+					}
+					geometry IndexedFaceSet {
+						convex FALSE  # verbindet alle Punkte normal
+						solid FALSE  # malt beide Seiten der Flaeche
+						coord Coordinate {
+							point [
+								3 47.6 0,  # P0
+								3 47.6 3,  # P1
+								3 0 3,     # P1 am Boden
+								3 0 0 	   # P0 am Boden
+							]
+						}
+						coordIndex [
+							 0,1,2,3,-1
+						
+						]
+					}
+				}
+			]
+		}
+
+		# S12
+		Transform {
+			translation 0 0 6
+			rotation 0 1 0 1.57 
+			children [
+				USE stripe3meters
+			]
+		}
+
+		# S13
+		Transform {
+			translation 0 0 21
+			rotation 0 1 0 1.57 
+			children [
+				USE stripe3meters
+			]
+		}
+
+		# S14
+		Transform {
+			translation 0 0 18
+			rotation 0 0 0 0
+			children [
+				USE stripe3meters
+			]
+		}
+
+		# S15
+		Transform {
+			translation 3 0 24
+			rotation 0 1 0 1.57 
+			children [
+				USE stripe3meters
+			]
+		}
+
+		# S16
+		Transform {
+			translation 3 0 21
+			children [
+				USE stripe3meters
+			]
+		}
+
+		# S17
+		Transform {
+			translation 18 0 21
+			children [
+				USE stripe3meters
+			]
+		}
+
+		# S18
+		Transform {
+			translation 21 0 24
+			rotation 0 1 0 1.57 
+			children [
+				USE stripe3meters
+			]
+		}
+
+		# S21
+		Transform {
+			children [
+				DEF stripe15meters Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 1 0
+						}
+					}
+					geometry IndexedFaceSet {
+						convex FALSE  # verbindet alle Punkte normal
+						solid FALSE  # malt beide Seiten der Flaeche
+						coord Coordinate {
+							point [
+								0 47.6 3,  # P2
+								0 47.6 18, # P3
+								0 0 18,     # P3 am Boden
+								0 0 3 	   # P2 am Boden
+							]
+						}
+						coordIndex [
+							 0,1,2,3,-1
+						
+						]
+					}
+				}
+			]
+		}
+
+		# S22
+		Transform {
+			translation 3 0 24
+			rotation 0 1 0 1.57
+			children [
+				USE stripe15meters
+			]
+		}
+
+		# S32
+		Transform {
+			children [
+				DEF stripe21meters Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 0 0
+						}
+					}
+					geometry IndexedFaceSet {
+						convex FALSE  # verbindet alle Punkte normal
+						solid FALSE  # malt beide Seiten der Flaeche
+						coord Coordinate {
+							point [
+								3 47.6 0,  # P0
+								24 47.6 0, # P11
+								24 0 0,    # P11 am Boden
+								3 0 0 	   # P0 am Boden
+							]
+						}
+						coordIndex [
+							 0,1,2,3,-1
+						
+						]
+					}
+				}
+			]
+		}
+
+		# S31
+		Transform {
+			translation 24 0 24
+			rotation 0 1 0 1.57
+			children [
+				USE stripe21meters
+			]
+		}
+
+	]
+}
