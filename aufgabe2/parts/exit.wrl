@@ -1,0 +1,432 @@
+#VRML V2.0 utf8
+# Jasmin Obert, Jacqueline Wegert, Jan Hanke
+
+DEF entrance Group {
+    children [
+        DEF entrance_front Group {
+            children [
+                
+                # Front
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                texture ImageTexture {
+                                    url "../textures/back/center.png"
+                                }
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        0.0     0.0     0.0,    # 0
+                                        43.8    0.0     0.0,    # 1
+                                        43.8   35.7     0.0, 	# 2
+                                        0.0    35.7     0.0     # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Front Left
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                texture ImageTexture {
+                                    url "../textures/back/front-side.png"
+                                }
+                                textureTransform TextureTransform {
+                                    rotation 1.5705
+                                    translation 0 0
+                                    scale 5 1
+                                }
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        0.0     0.0     0.0,    # 0
+                                        0.0    26.0     0.0     # 1
+                                        0.0    26.0    -3.0, 	# 2
+                                        0.0     0.0    -3.0,    # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Front Top Left
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                texture ImageTexture {
+                                    url "../textures/back/top.png"
+                                }
+                                textureTransform TextureTransform {
+                                    rotation 1.5705
+                                    scale 2 1
+                                }
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        0.0    26.0     0.0,    # 0
+                                        0.0    35.7     0.0     # 1
+                                        0.0    35.7    -24.3, 	# 2
+                                        0.0    26.0    -24.3,    # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Front Right
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                texture ImageTexture {
+                                    url "../textures/back/front-side.png"
+                                }
+                                textureTransform TextureTransform {
+                                    rotation 1.5705
+                                    translation 0 0
+                                    scale 5 1
+                                }
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        43.8     0.0     0.0,   # 0
+                                        43.8     0.0    -3.0,   # 1
+                                        43.8    26.0    -3.0,   # 2
+                                        43.8    26.0     0.0,   # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Front Top Right
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                texture ImageTexture {
+                                    url "../textures/back/top.png"
+                                }
+                                textureTransform TextureTransform {
+                                    rotation 1.5705
+                                    scale 2 1
+                                }
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        43.8    26.0     0.0,    # 0
+                                        43.8    26.0    -24.3,    # 1
+                                        43.8    35.7    -24.3, 	# 2
+                                        43.8    35.7     0.0     # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Top
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                texture ImageTexture {
+                                    url "../textures/back/top.png"
+                                }
+                                textureTransform TextureTransform {
+                                    rotation 1.5705
+                                    scale 2 1
+                                }
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                        0.0    35.7     0.0,   # 0
+                                        43.8   35.7     0.0,   # 1
+                                        43.8   35.7   -24.3,   # 2
+                                        0.0    35.7   -24.3,   # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Front Top Back Wall
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                texture ImageTexture {
+                                    url "../textures/back/top.png"
+                                }
+                                textureTransform TextureTransform {
+                                    rotation 1.5705
+                                    scale 2 1
+                                }
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                         0.0    26.0    -24.3,    # 0
+                                         0.0    35.7    -24.3,    # 3
+                                        43.8    35.7    -24.3,    # 2
+                                        43.8    26.0    -24.3,    # 1
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                # Front Top Back
+                Transform {
+                    translation 0 0 0
+                    children [
+                        Shape {
+                            appearance Appearance {
+                                material Material {
+                                    diffuseColor 0.5 0.5 0.5
+                                }
+                                #texture ImageTexture {
+                                #    url "../textures/facade_front_left.png"
+                                #}
+                            }
+
+                            geometry IndexedFaceSet {
+                                coord Coordinate {
+                                    point [
+                                         0.0    26.0    -24.3,    # 0
+                                        43.8    26.0    -24.3,    # 1
+                                        43.8    26.0    -33.9,    # 2
+                                         0.0    26.0    -33.9,    # 3
+                                    ]
+                                }
+                                coordIndex [
+                                    0, 1, 2, 3, -1
+                                ]
+                            }
+                        }
+                    ]
+                }
+
+                Group {
+                    children [
+                        # Front
+                        Transform {
+                            translation 0 0 0
+                            children [
+                                Shape {
+                                    appearance Appearance {
+                                        material Material {
+                                            diffuseColor 0.8 0.8 0.8
+                                        }
+                                        texture ImageTexture {
+                                            url "../textures/back/center.png"
+                                        }
+                                        textureTransform TextureTransform {
+                                            rotation 1.5705
+                                            translation 0 0
+                                            scale 1.15 1
+                                        }
+                                    }
+
+                                    geometry IndexedFaceSet {
+                                        coord Coordinate {
+                                            point [
+                                                6.6     0.0     9.15,    # 0
+                                                37.2    0.0     9.15,    # 1
+                                                37.2   35.7     9.15,    # 2
+                                                6.6    35.7     9.15,    # 3
+                                            ]
+                                        }
+                                        coordIndex [
+                                            0, 1, 2, 3, -1
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+
+                        # Left
+                        Transform {
+                            translation 0 0 0
+                            children [
+                                Shape {
+                                    appearance Appearance {
+                                        material Material {
+                                            diffuseColor 0.8 0.8 0.8
+                                        }
+                                        texture ImageTexture {
+                                            url "../textures/back/front-side.png"
+                                        }
+                                        textureTransform TextureTransform {
+                                            rotation 1.5705
+                                            translation 0 0
+                                            scale 5 1
+                                        }
+                                    }
+
+                                    geometry IndexedFaceSet {
+                                        coord Coordinate {
+                                            point [
+                                                6.6    0.0     9.15,    # 0
+                                                6.6    35.7    9.15,    # 1
+                                                6.6    35.7     0.0,    # 2
+                                                6.6    0.0      0.0,    # 3
+                                            ]
+                                        }
+                                        coordIndex [
+                                            0, 1, 2, 3, -1
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+
+                        # Right
+                        Transform {
+                            translation 0 0 0
+                            children [
+                                Shape {
+                                    appearance Appearance {
+                                        material Material {
+                                            diffuseColor 0.8 0.8 0.8
+                                        }
+                                        texture ImageTexture {
+                                            url "../textures/back/front-side.png"
+                                        }
+                                        textureTransform TextureTransform {
+                                            rotation 1.5705
+                                            translation 0 0
+                                            scale 5 1
+                                        }
+                                    }
+
+                                    geometry IndexedFaceSet {
+                                        coord Coordinate {
+                                            point [
+                                                37.2    0.0     9.15,    # 0
+                                                37.2    0.0      0.0,    # 1
+                                                37.2    35.7     0.0,    # 2
+                                                37.2    35.7    9.15,    # 3
+                                            ]
+                                        }
+                                        coordIndex [
+                                            0, 1, 2, 3, -1
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+
+                        # Top
+                        Transform {
+                            translation 0 0 0
+                            children [
+                                Shape {
+                                    appearance Appearance {
+                                        material Material {
+                                            diffuseColor 0.8 0.8 0.8
+                                        }
+                                        texture ImageTexture {
+                                            url "../textures/back/top-front.png"
+                                        }
+                                        textureTransform TextureTransform {
+                                            rotation -1.5705
+                                            scale 3 1
+                                        }
+                                    }
+
+                                    geometry IndexedFaceSet {
+                                        coord Coordinate {
+                                            point [
+                                                 6.6    35.7    9.15,    # 0
+                                                37.2    35.7    9.15,    # 1
+                                                37.2    35.7     0.0,    # 2
+                                                 6.6    35.7     0.0,    # 3
+                                            ]
+                                        }
+                                        coordIndex [
+                                            0, 1, 2, 3, -1
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
