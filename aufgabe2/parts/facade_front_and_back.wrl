@@ -74,6 +74,10 @@ DEF all_facade Group {
                                 material Material {
                                     diffuseColor 0.5 0.5 0.5
                                 }
+                                texture ImageTexture {
+                                    url "../textures/glass-roof.png"
+                                }
+
                             }
 
                             geometry IndexedFaceSet {
@@ -224,6 +228,9 @@ DEF all_facade Group {
                                     appearance Appearance {
                                         material Material {
                                             diffuseColor 0.5 0.5 0.5
+                                        }
+                                        texture ImageTexture {
+                                            url "../textures/glass-roof.png"
                                         }
                                     }
 
