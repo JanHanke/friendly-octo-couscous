@@ -12,6 +12,7 @@ Transform {
     ]
 }
 
+# Entrance
 Transform {
     translation 53.4 0 -0.9
     rotation 0 0 0 0
@@ -28,6 +29,50 @@ Transform {
     children [
         Inline {
             url "./parts/center_building.wrl"
+        }
+    ]
+}
+
+# Tower Front Left
+Transform {
+    translation 0 0 -24.9
+    rotation 0 0 0 0
+    children [
+        Inline {
+            url "./parts/tower.wrl"
+        }
+    ]
+}
+
+# Tower Back Left
+Transform {
+    translation 24 0 -100.5
+    rotation 0 1 0 -1.57075
+    children [
+        Inline {
+            url "./parts/tower.wrl"
+        }
+    ]
+}
+
+# Tower Back Right
+Transform {
+    translation 150.6 0 -76.5
+    rotation 0 1 0 3.1415
+    children [
+        Inline {
+            url "./parts/tower.wrl"
+        }
+    ]
+}
+
+# Tower Front Right
+Transform {
+    translation 126.6 0 -0.9
+    rotation 0 1 0 1.57075
+    children [
+        Inline {
+            url "./parts/tower.wrl"
         }
     ]
 }
